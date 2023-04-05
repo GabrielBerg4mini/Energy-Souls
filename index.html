@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="./css-js-bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./style/style.css">
-      
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">  
 
 </head>
 
@@ -19,13 +19,36 @@
           </a>
 
             <nav id="nav">
-                <ul id="menu">
+
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburguer"></span>
+                </button>
+
+                <ul id="menu" role="menu">
+
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Projetos</a></li>
                     <li><a href="#">Apresentação</a></li>
                     <li><a href="#">Sobre nós</a></li>
                 </ul>
             </nav>
+            
+                <ul id="menu-contato">
+            
+                    <li>
+                    <a href=""><img class="image-contato" src="./image/instagram.png" alt="icon-insta"></a>
+                    </li>
+
+                    <li>
+                        <a href=""><img class="image-contato" src="./image/facebook.png" alt="icon-face"></a>
+                    </li>
+
+                    <li>
+                        <a href=""><img class="image-contato" src="./image/whatsapp.png" alt="icon-whats"></a>
+                    </li>
+                    
+                </ul>
+            
   </header>
   <main>
 
@@ -36,6 +59,7 @@
   <!-- Bootstrap JavaScript Libraries -->
   
   <script src="./css-js-bootstrap/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
