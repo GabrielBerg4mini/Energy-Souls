@@ -1,63 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <title>5W Brazil Energy</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="./css-js-bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="./assets/fonts/fonts.css">  
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="./css-js-bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./assets/fonts/fonts.css" />
 </head>
 
 <body>
   <header id="container-menu">
+    <a href="#">
+      <img src="./image/logo.png" alt="Logo" class="image-logo" />
+    </a>
 
-          <a  href="#">
-            <img src="./image/logo.png" alt="Logo" class="image-logo">
-          </a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburguer"></span>
+      </button>
 
-            <nav id="nav">
+      <ul id="menu" role="menu">
+        <li><a class="nav-menus" href="#home">Inicio</a></li>
+        <li><a class="nav-menus" href="#projetos">Projetos</a></li>
+        <li><a class="nav-menus" href="#apresentacao">Apresentação</a></li>
+        <li><a class="nav-menus" href="#sobre">Sobre nós</a></li>
+      </ul>
+    </nav>
 
-                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                    <span id="hamburguer"></span>
-                </button>
+    <ul id="menu-contato">
+      <li>
+        <a href="https://www.instagram.com/5wbrazilenergy/" target="_blank"><img class="image-contato"
+            src="./image/instagram.png" alt="icon-insta" /></a>
+      </li>
 
-                <ul id="menu" role="menu">
+      <li>
+        <a href="https://www.facebook.com/5wbrazilenergy" target="_blank"><img class="image-contato"
+            src="./image/facebook.png" alt="icon-face" /></a>
+      </li>
 
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Apresentação</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                </ul>
-            </nav>
-            
-                <ul id="menu-contato">
-            
-                    <li>
-                    <a href=""><img class="image-contato" src="./image/instagram.png" alt="icon-insta"></a>
-                    </li>
-
-                    <li>
-                        <a href=""><img class="image-contato" src="./image/facebook.png" alt="icon-face"></a>
-                    </li>
-
-                    <li>
-                        <a href=""><img class="image-contato" src="./image/whatsapp.png" alt="icon-whats"></a>
-                    </li>
-                    
-                </ul>
-            
+      <li>
+        <a href="https://wa.me/551938773229?text=Olá, Quero Realizar o meu Orçamento com Vocês!" target="_blank"><img
+            class="image-contato" src="./image/whatsapp.png" alt="icon-whats" /></a>
+      </li>
+    </ul>
   </header>
-  <main>
+
+  <div id="wrapper">
+
+    <main>
+
+      <section id="home">
+
+        <section class="module parallax parallax-1">
+          <h1>O valor da energia elétrica está te incomodando?</h1>
+          <h1>Que tal fazer um orçamento, e ter o melhor gerador de energia para sua casa ou empresa ?</h1>
+        </section>
+
+        <section class="module content">
+          <div class="container">
+            <h2>Aqui na 5W Brazil Energy</h2>
+            <p>Você encontra as melhores placas solares para a sua casa ou empresa,com ótimos preços e um bom atendimento, ficou curioso ?</p>
+            <button id="btn-orçamento1"><a href="https://wa.me/551938773229?text=Olá, Quero Realizar o meu Orçamento com Vocês!" target="_blank">Venha já fazer o seu orçamento com a gente!</a></button>
+        </section>
+  </div>
+
+  </section>
+
+  <section id="projetos">
+
+  </section>
+
+  <section id="apresentacao">
+
+  </section>
+
+  <section id="sobre">
+
+  </section>
 
   </main>
+
+  </div>
   <footer>
     <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
-  
+
   <script src="./css-js-bootstrap/bootstrap.min.js"></script>
   <script src="./js/script.js"></script>
 </body>

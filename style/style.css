@@ -2,8 +2,12 @@
     --color-white: #fff;
     --color-blue: rgb(0, 0, 255);
     --color-blue2: rgb(76, 93, 168);
+    --color-blue4:rgb(8, 8, 124);
     --color-dark: #000;
     --color-dark2: #575656;
+    --color-blue3: #2691e9;
+    --color-yellow: rgb(255, 255, 0);
+    --color-red: red;
 }
 
 * {
@@ -15,37 +19,41 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background: var(--color-dark);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 html {
     scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+
 }
 
 #container-menu {
     width: 100%;
     height: 5rem;
     padding: 0 3rem;
-    background: var(--color-blue);
+    background: var(--color-blue4);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     position: fixed;
+    z-index: 9999;
+    box-shadow: 0 0 .8rem var(--color-dark);
 }
 #nav  {
     padding-top: 1rem;
 }
-#nav a {  
+#menu li a {  
     color: var(--color-white);
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500;
-    display: block;
     padding: .4rem;
+    position: relative;
 }
-#nav a:hover {
-    background: var(--color-blue2);
-    border-radius: 0.2rem;
-}
+
 #nav ul li {
     list-style: none;
     transition: 2s;
@@ -53,6 +61,23 @@ html {
 #menu {
     display: flex;
     gap: 2.5rem;
+}
+li .nav-menus::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--color-white);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+li .nav-menus:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 #menu-contato {
     display: flex;
@@ -64,12 +89,87 @@ html {
     list-style: none;
 }
 .image-contato {
-    width: 2rem;
+    width: 1.8rem;
+    transition: .5s;
+    border-radius: .2rem;
+    
+}
+.image-contato:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 .3rem var(--color-blue2);
 }
 #btn-mobile{
     display: none;
 }
-@media(max-width: 600px) {
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+main {
+    display: block;
+    background-color: var(--color-white);
+}
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section.module p {
+    margin-bottom: 40px;
+}
+section.module:last-child {
+    margin-bottom: 0;
+}
+section.module h2 {
+    margin-bottom: 40px;
+}
+section.module.content {
+    padding: 40px 0;
+    background: var(--color-blue3);
+}
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh!important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+section.module.parallax::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, var(--color-dark) 100%);;
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, var(--color-dark) 100%);;
+    background: -o-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, var(--color-dark) 100%);;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, var(--color-dark) 100%);
+
+}
+section.module.parallax-1 {
+    background-image: url(../image/background1.jpg);
+}
+section.module:nth-child(1) {
+    font-size: 3rem;
+    color: var(--color-red);
+    text-align: center;
+}
+
+
+
+
+
+@media(max-width: 800px) {
     .image-logo {
         width: 5rem;
     }
@@ -82,33 +182,31 @@ html {
         width: 50%;
         top: 5rem;
         right: 0;
-        background: var(--color-blue);
+        background: var(--color-blue4);
         height: 0;
         z-index: 9999;
         border-bottom-left-radius: 0.5rem;
         transition: .6s;
         visibility: hidden ;
         overflow-y: hidden;
+        padding-left: .5rem;
     }
-    #menu a {
-        margin: 0.8rem 0.5rem;
-        border-bottom: 0.1rem solid var(--color-blue2);
+    #menu li a {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
     }
     #menu-contato {
         display: none;
     }
     #nav.active #menu{
-        height: 32vh;
+        height: 30vh;
         visibility: visible;
-    }
-    #nav a {
-        font-size: 1.1rem;
     }
     #btn-mobile {
         display: flex;
         margin-bottom: 1rem;
         padding: .5rem 1rem;
-        font-size: 1.2rem;
         border: none;
         background: none;
         color: var(--color-white);
