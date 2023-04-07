@@ -25,10 +25,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-h1,h2,h3,h4,h5,h6 {
-    font-weight: 900;
-
-}
 
 #container-menu {
     width: 100%;
@@ -49,7 +45,7 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--color-white);
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-family: 'Poppins', !important;
     padding: .4rem;
     position: relative;
 }
@@ -159,10 +155,13 @@ section.module.parallax::after {
 section.module.parallax-1 {
     background-image: url(../image/background1.jpg);
 }
-section.module:nth-child(1) {
-    font-size: 3rem;
-    color: var(--color-red);
+.titulo-1 {
     text-align: center;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-shadow: 0 0 .1rem var(--color-white);
+    color: var(--color-red);
+    font-family: 'Holtwood One SC', serif;
 }
 
 
