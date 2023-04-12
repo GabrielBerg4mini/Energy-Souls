@@ -1,16 +1,19 @@
 :root {
     --color-white: #fff;
+    --color-white2: #b9b9b9;
     --color-blue: rgb(0, 0, 255);
     --color-blue2: rgb(76, 93, 168);
     --color-blue4:rgb(8, 8, 124);
     --color-dark: #000;
     --color-dark2: #575656;
+    --color-dark3: #1f1c1c;
     --color-blue3: #2691e9;
     --color-yellow: rgb(255, 255, 0);
     --color-red: red;
     --color-green: rgb(4, 255, 0);
     --color-orange: rgb(255, 166, 0);
     --color-orange2: rgb(235, 189, 114);
+
 }
 
 * {
@@ -24,6 +27,7 @@ body {
     min-height: 100vh;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    background: var(--color-white2);
 }
 html {
     scroll-behavior: smooth;
@@ -100,7 +104,14 @@ li .nav-menus:hover::after {
 #btn-mobile{
     display: none;
 }
+
+
+
+
 @media (max-width: 800px) {
+#carouselExampleInterval {
+    display: none;
+}
 .image-logo {
     width: 5rem;
 }
@@ -196,7 +207,7 @@ li .nav-menus:hover::after {
 }
 .parallax-1 {
     background-size: cover;
-    background-image: url(../image/background1.jpg);
+    background-image: url(../image/background3.jpg);
 }
 .titulo-1 {
     font-weight: 900;
@@ -217,19 +228,20 @@ li .nav-menus:hover::after {
     z-index: 88;
     transition: .4s;
 }
-.btn-1, .btn-2 {
+.btn-1, .btn-2, .btn-3 {
     color: var(--color-white);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 700;
+    z-index: 100;
 }
-#btn-1:hover, #btn-2:hover {
+#btn-1:hover, #btn-2:hover, #btn-3:hover {
     transition: .5s;
     background-color: var(--color-orange2);
 }
 .content {
     width: 100%;
-    height: 65vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
 }
@@ -259,7 +271,7 @@ li .nav-menus:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2.6rem;
+    height: 2.5rem;
     border-radius: .4rem;
     transition: .4s;
 }
@@ -280,22 +292,92 @@ li .nav-menus:hover::after {
 }
 #apresentacao {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+    background-attachment: fixed;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    background-image: url(../image/background1.jpg);
+    background-size: cover;
+}
+#apresentacao::after {
+    content: '';
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0) 180%);
+}
+#explicacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .titulo-2{
     padding: 0 0 1rem 1rem;
     font-size: 1.5rem;
     font-weight: 900;
-    color: var(--color-dark);
+    color: var(--color-white);
+    text-shadow: 0 0 .2rem var(--color-blue4);
 }
 .paragrafo-2 {
-    color: var(--color-dark2);
-    font-size: 1rem;
-    font-weight: 600;
+    color: var(--color-white);
+    text-shadow: 0 0 0.5rem var(--color-blue4);
+    font-size: 1.1rem;
+    font-weight: 500;
     padding-left: .5rem;
+}
+#btn-3 {
+    width: 16rem;
+    height: 2.5rem;
+    background: var(--color-orange);
+    border-radius: .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sobre{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sobre h2 {
+    display: inline-block;
+    background: linear-gradient(to right, white 20%, green 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2rem;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    text-align: center;
+    padding: 5rem 0 1.2rem 0;
+}
+.container p {
+    padding: 1rem .5rem 0 .5rem;
+    font-size: 1.1;
+    font-weight: 600;
+    color: var(--color-dark3);
+}
+.container-img img {
+    width: 20rem;
+    border-radius: .5rem;
+}
+footer {
+    width: 100%;
+    height: 25vh;
+    background: var(--color-dark3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rede-sociais {
+    gap: .8rem;
+    display: flex;
+}
+footer p {
+    color: var(--color-white);
 }
 }   
 
