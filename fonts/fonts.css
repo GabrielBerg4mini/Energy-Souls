@@ -3,3 +3,8 @@
     src: url('fonts/Poppins-Light.ttf') format('truetype'), url('Poppins-Bold.ttf') format('truetype');
 
 }
+
+@font-face {
+    font-family: '';
+    src: url(''), format(''); 
+}

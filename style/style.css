@@ -125,6 +125,7 @@ li .nav-menus:hover::after {
     text-shadow: 0 0 .5rem var(--color-blue4);
     font-weight: 900;
     padding-bottom: 2rem;
+    font-family: 'hatsch';
 }
 
 
