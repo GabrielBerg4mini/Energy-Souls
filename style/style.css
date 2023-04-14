@@ -11,6 +11,7 @@
     --color-yellow: rgb(255, 255, 0);
     --color-red: red;
     --color-green: rgb(4, 255, 0);
+    --color-green2:rgb(22, 125, 22);
     --color-orange: rgb(255, 166, 0);
     --color-orange2: rgb(235, 189, 114);
     --color-purple: rgb(77, 0, 128);
@@ -503,7 +504,7 @@ footer p {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 700;
-    z-index: 100;
+    z-index: 200;
 }
 #btn-1:hover, #btn-2:hover, #btn-3:hover {
     transition: .5s;
@@ -603,6 +604,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 230;
 }
 #sobre{
     width: 100%;
