@@ -13,7 +13,8 @@
     --color-green: rgb(4, 255, 0);
     --color-orange: rgb(255, 166, 0);
     --color-orange2: rgb(235, 189, 114);
-
+    --color-purple: rgb(77, 0, 128);
+    --color-purple2: rgb(196, 9, 196);
 }
 
 * {
@@ -51,7 +52,7 @@ html {
 #menu li a {  
     color: var(--color-white);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Poppins', !important;
     padding: .4rem;
     position: relative;
@@ -92,7 +93,7 @@ li .nav-menus:hover::after {
     list-style: none;
 }
 .image-contato {
-    width: 1.8rem;
+    width: 1.5rem;
     transition: .5s;
     border-radius: .2rem;
     
@@ -144,14 +145,15 @@ li .nav-menus:hover::after {
 #btn-1 {
     margin-top: 2rem;
     background: var(--color-orange);
-    width: 15.5rem;
-    height: 2.5rem;
+    width: 16rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
     z-index: 88;
     transition: .4s;
+    cursor: pointer;
 }
 .btn-1, .btn-2, .btn-3 {
     color: var(--color-white);
@@ -169,41 +171,33 @@ li .nav-menus:hover::after {
     width: 100%;
     height: 50vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
-body {
-    background-color: red;
-}
 .container {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 .seta {
     position: relative;
-    display: flex;
-    justify-content: center;
-    top: -2rem; 
+    top: -2rem;
 }
 .paragrafo-1 {
     position: relative;
-    top: -5rem;
-    font-size: 1.1rem;
+    top: -2.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    color: var(--color-dark);
 }
 #btn-2 {
+    width: 16.5rem;
+    height: 3rem;
     background: var(--color-orange);
-    position: relative;
-    top: -4rem;
-    width: 16rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 2.5rem;
-    border-radius: .4rem;
-    transition: .4s;
+    justify-content: center;
+    border-radius: .5rem;
+    cursor: pointer;
 }
 #projetos {
     width: 100%;
@@ -243,6 +237,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 .titulo-2 {
     text-align: center;
@@ -254,7 +249,7 @@ body {
 #btn-3 {
     margin-top: 2rem;
     width: 20rem;
-    height: 2.7rem;
+    height: 3rem;
     background: var(--color-orange);
     display: flex;
     justify-content: center;
@@ -263,8 +258,8 @@ body {
     cursor: pointer;
 }
 .paragrafo-2 {
-    padding-left: 2rem;
-    font-size: 1.1rem;
+    padding: 0 2rem;
+    font-size: 1.4rem;
     font-weight: 900;
     color: var(--color-dark3);
 }
@@ -280,42 +275,110 @@ body {
     background: linear-gradient(to right, white 20%, green 0);
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 2rem;
+    font-size: 3rem;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 5rem;
     font-family: 'NextFont';
 }
-.container {
+.container-2 {
     width: 100%;
-    height: 100vh;
+    padding-top: 2.5rem;
     display: flex;
-    flex-direction: row;
-    gap: 0 1rem;
-    margin: 0;
-    padding: 0;
+    gap: 1rem;
 }
-.container p{
-    font-size: 1.4rem;
+.container-p {
+    width: 65%;
+}
+.container-p p {
+    font-size: 1.5rem;
+}
+.img-empresa {
+    width: 32rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
 }
 footer {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     background: var(--color-dark3);
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.politica , .termos {
+    width: 55%;
+} 
+.politica p, .termos p {
+    font-size: .8rem;
+}
+.politica h3, .termos h3 {
+    color: white;
+}
+.btn-whats {
+    text-decoration: none;
+    width: 10rem;
+    height: 2rem;
+    background: var(--color-green);
+    display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: .5rem;
+    color: var(--color-white);
+}
+.btn-whats:hover {
+    background: var(--color-green2);
+}
+.btn-insta {
+    text-decoration: none;
+    width: 10rem;
+    height: 2rem;
+    background: var(--color-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    color: var(--color-white);
+}
+.btn-insta:hover {
+    background: var(--color-purple2);
+}
+.btn-face {
+    text-decoration: none;
+    width: 10rem;
+    height: 2rem;
+    background: var(--color-blue4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    color: var(--color-white);
+}
+.btn-face:hover {
+    background: var(--color-blue2);
 }
 .rede-sociais {
     gap: .8rem;
     display: flex;
+    flex-direction: column;
 }
 footer p {
     font-size: 1.3rem;
     color: var(--color-white);
 }
+.btn-top {
+    position: fixed;
+    bottom: 10px;
+    right: 12px;
+    z-index: 8999;
+}
+.btn-top:hover {
+    transform: scale(1.1);
+}
+
+
 
 @media (max-width: 800px) {
 .image-logo {
@@ -448,27 +511,25 @@ footer p {
 }
 .content {
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
 }
 .container {
+    width: 100%;
     display: flex;
+    height: 65vh;
     flex-direction: column;
     align-items: center;
-}
-.seta {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: -.2rem;
 }
 .paragrafo-1 {
     position: relative;
     top: -5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-dark2);
+    font-size: 1.2rem;
+}
+.seta {
+    position: relative;
+    top: -2rem;
 }
 #btn-2 {
     background: var(--color-orange);
@@ -478,7 +539,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2.5rem;
+    padding: .45rem 0;
     border-radius: .4rem;
     transition: .4s;
 }
@@ -549,6 +610,8 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 #sobre h2 {
     display: inline-block;
@@ -561,32 +624,55 @@ footer p {
     text-align: center;
     padding: 5rem 0 1.2rem 0;
 }
+.container-2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
 .container-p {
+    width: 100%;
     padding: 1rem;
     color: var(--color-dark3);
 }
 .container-p p {
     font-size: 1rem;
 }
+.container-img {
+    padding: 0;
+    margin: 0;
+}
 .container-img img {
     width: 20rem;
     border-radius: .5rem;
+    padding: 0;
+    margin: 0;
+}
+.termos, .politica {
+    display: none;
 }
 footer {
     width: 100%;
-    height: 25vh;
+    margin-top: 2rem;
+    height: 28vh;
     background: var(--color-dark3);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .rede-sociais {
-    gap: .8rem;
+    gap: .5rem;
     display: flex;
+    flex-direction: column;
 }
 footer p {
-    font-size: 1.1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
     color: var(--color-white);
 }
 }   
