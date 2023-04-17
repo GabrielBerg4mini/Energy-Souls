@@ -7,11 +7,13 @@
  
 <p align="center">
     <img width="600" src="./assets/to-readme/gif-desktop.gif">
- 
+</p>
+
 ### result Mobile: 
 
-![image](https://user-images.githubusercontent.com/107642863/232159676-2a899a2c-37af-4888-b8b6-d953f8035789.png)
-
+<p align="center">
+    <img width="460" src="./assets/to-readme/gif-mobile.gif">
+</p>
 
 ## Project developed with HTML, CSS and JavaScript. And besides that I used Bootstrap to help me have a better performance on the site.
 
