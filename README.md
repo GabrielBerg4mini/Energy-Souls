@@ -5,7 +5,8 @@
 
 ### result DeskTop:
  
- 
+<p align="center">
+    <img width="600" src="./assets/to-readme/gif-desktop.gif">
  
 ### result Mobile: 
 
