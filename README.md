@@ -1,7 +1,7 @@
 # Energy Souls
 >Status: finished.
 
-### I developed this project for the company 5w Brazil Energy, unfortunately I didn't have much help from the company, but I made do with what I found in the research about it. Company focused on solar energy panels.
+### I developed this project for a company focused on solar panels, however, I was not able to sell the website, so I changed some things so as not to harm me or her, but I loved the result and was very happy with the experience I acquired. performing it.
 
 ### result DeskTop:
  
