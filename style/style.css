@@ -283,7 +283,7 @@ li .nav-menus:hover::after {
 }
 #sobre h2 {
     display: inline-block;
-    background: linear-gradient(to right, white %, green 0);
+    background: linear-gradient(to right,  white 55%, green 0);
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 3rem;
